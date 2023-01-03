@@ -1,0 +1,18 @@
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class Main {
+    public static void main( String[] args ) {
+        LinkedList<String> list = new LinkedList<> ();
+        list.addFirst ( "Leo" );
+        list.add ( "Messi" );
+        list.addLast ( "Jirrar" );
+        list.add ( "Pike" );
+        Iterator<String> iterator = list.iterator ();
+        while (iterator.hasNext ()) {
+            System.out.println ( iterator.next () );
+        }
+    }
+}
+
+
